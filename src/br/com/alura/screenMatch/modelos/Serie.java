@@ -1,6 +1,8 @@
 package br.com.alura.screenMatch.modelos;
 
-public class Serie extends Titulo {
+import br.com.alura.screenMatch.calculos.Classificavel;
+
+public class Serie extends Titulo implements Classificavel {
     private int temporadas;
     private int episodiosPorTemporada;
     private boolean ativa;
@@ -42,5 +44,10 @@ public class Serie extends Titulo {
     public double getDuracaoMinutos(){
         return minutosPorEpisodio *temporadas *episodiosPorTemporada;
 
+    }
+
+    @Override
+    public int getClassifiacao() {
+        return 0;
     }
 }
