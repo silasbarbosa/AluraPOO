@@ -47,7 +47,7 @@ public class Serie extends Titulo implements Classificavel {
     }
 
     @Override
-    public int getClassifiacao() {
+    public int getClassificacao() {
         return 0;
     }
 }

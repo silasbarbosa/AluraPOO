@@ -1,6 +1,6 @@
 package br.com.alura.screenMatch.modelos;
 
-public class Filme extends Titulo implements Episodio{
+public class Filme extends Titulo{
     private String diretor;
 
     public String getDiretor() {
